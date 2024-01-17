@@ -1,7 +1,10 @@
 alert ('Olá! eu sou o Marthons');
-let numeroSecreto = 29;
-let chute = prompt ('escolha um numero entre 1 e 30');
+let numeroSecreto = 9;
+console.log(numeroSecreto);
+let chute = prompt ('escolha um numero entre 1 e 10');
 
 if(numeroSecreto == chute){
-    console.log('acertou');
+    console.log(`acertou o nuero secreto ${numeroSecreto}`);
+}else {
+    alert ('errou');
 }
