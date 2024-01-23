@@ -1,4 +1,4 @@
-body, h1, p, a, img {
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000000;
     color: #F6F6F6;
+    box-sizing: border-box;
 }
 
 
@@ -25,7 +26,7 @@ p {
     margin-bottom: 20px;
 }
 
-strong{
+.titulo-destaque {
     color: #13B02C;
 }
 
@@ -38,7 +39,8 @@ img {
 
 .cabecalho {
     font-size: 78px;
-    color: brown;
+    color: #a52a2a;
+    margin: 2rem;
 }
 
 a {
@@ -52,19 +54,29 @@ a:hover {
 }
 
 main {
-    display: flex;
     flex-direction: row; 
     align-items: center;
     background-color: brown;
+    justify-content: space-around;
 }
 
-.sobre, .link, .imagem {
-    width: 100%;
-    box-sizing: border-box;
+.sobre {
+    width: 615px;
 }
 
-.sobre, .link {
-    max-width: 50%; 
+.apresentação {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-eu {
+    padding: 2.5rem 0 2.5rem 2.5rem;
+}
+
+.titulo {
+    font-size: 36px;
+    padding-bottom: 5rem;
 }
 
 .imagem {
@@ -73,16 +85,22 @@ main {
 }
 
 .link {
+    align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 20px;
 }
 
 a#link {
-    display: inline-block; 
-    padding: 10px; 
-    border: 2px solid #13B02C; 
-    text-decoration: none; 
+    -webkit-box-shadow: -19px 11px 26px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -19px 11px 26px -1px rgba(0,0,0,0.75);
+    box-shadow: -19px 11px 26px -1px rgba(0,0,0,0.75);
+    padding: 10px;
     background-color: #13B02C;
-    color: brown; 
+    color: brown;
+    border-radius: 2rem;
+}
+
+.texto {
+    font-size: 24;
 }
